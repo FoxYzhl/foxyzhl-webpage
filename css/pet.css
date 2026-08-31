@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 90vh;
+    background: linear-gradient(-150deg,#2f24ff,#7dd6ed,#2ec8ac,#0d94ee) no-repeat;
+}
+div {
+    overflow-wrap: break-word;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    margin: 20px 0 0 0;
+    display: flex;
+    height: 60vh;
+    justify-content: space-around;
+}
+.button-left {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-around;
+}
+.button-left > input {
+    width: 70%;
+    min-height: 80px;
+    background-color: #00000000;
+    border: none;
+    border-radius: 0 100px 100px 100px;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    color: #237f29;
+    backdrop-filter: blur(4px);
+    box-shadow: inset -6px -3px 15px 5px #ffffff63;
+    transition: width 0.6s;
+}
+.button-left > input:hover {
+    width: 100%;
+    cursor: pointer;
+    transition: width 0.6s;
+    color: #00ff12;
+}
+.protagonist {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prota {
+    width: 100%;
+    height: 100%;
+    background: url("../image/pet_icon.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+#message {
+    width: 25%;
+    min-height: 10%;
+    padding: 20px;
+    border-radius: 20px 20px 0 20px;
+    text-indent: 2rem;
+    backdrop-filter: blur(4px);
+    box-shadow: inset -6px -3px 15px 5px #ffffff83;
+}
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 16vh;
+    background: linear-gradient(90deg, #E3772B,#CBCB41,#E3772B,#CBCB41) no-repeat;
+}
+.foot {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: space-around;
+    color: white;
+    background-color: #2b2b2b;
+    height: 90%;
+    width: 100%;
+}
+.foot > div {
+    border-radius: 100px;
+    padding: 15px;
+    box-shadow: 0 0 30px 5px black;
+    border: 1px solid #525252;
+}
+.foot span {
+    border-radius: 100px;
+    padding: 10px 40px;
+    box-shadow: inset 0 0 20px 1px black;
+    margin: 0 10px;
+    border: 1px solid #525252;
+}
+.foot > div:hover {
+    cursor: default;
+}
+.window {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000aa;
+    z-index: 100;
+}
+.window-main {
+    width: 800px;
+    height: 150px;
+    margin: 25vh auto;
+    text-align: center;
+}
+.window-main p:nth-of-type(1) {
+    background-color: blue;
+    color: white;
+    height: 15%;
+}
+.window-main p:nth-of-type(2) {
+    height: 85%;
+    padding: 20px 0 0 0;
+    background-color: white;
+}
+.winbutton-confirm {
+    margin-top: 5%;
+    padding: 5px 10px;
+    background-color: #e27d00;
+    border: none;
+    box-shadow: -3px 2px 0 1px #a85c00;
+    color: white;
+    cursor: pointer;
+}
+.payfood_background {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #00000067;
+    display: none;
+    justify-content: center;
+    z-index: 100;
+}
+.payfood_window {
+    margin-top: 20vh;
+    width: 45%;
+    height: 40vh;
+}
+.window_title {
+    background-color: #76ba51;
+    color: white;
+    text-align: center;
+    border-radius: 30px 30px 0 0;
+    height: 10%;
+    padding: 18px 0 0 0;
+}
+.window_main {
+    padding: 20px;
+    background-color: #d9d9a5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 0 0 20px 20px;
+    height: 85%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.paycard {
+    width: 25%;
+    height: 220px;
+    background-color: white;
+    border: 1px solid #b2b2b2;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+.cardup {
+    height: 75%;
+    background-color: #d7d4d4;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carddown {
+    margin-top: 10px;
+    height: 25%;
+    border-top: 1px solid #979797;
+    color: #979797;
+}
+.carddown span {
+    color: red;
+    margin: 0 0.6rem 0 0;
+}
+.carddown span > del {
+    color: #979797;
+    margin: 0 0 0 0.3rem;
+}
+
+/* Phone */
+@media (width <= 500px) {
+    main {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .button-left, .button-left input {
+        width: 100%;
+        gap: 30px;
+    }
+    .prota {
+        min-height: 30%;
+    }
+    .protagonist {
+        width: 100%;
+    }
+    footer {
+        height: 10vh;
+    }
+    .foot {
+        padding: 10px 0;
+        gap: 20px;
+    }
+    .window-main {
+        width: 200px;
+    }
+    .payfood_window {
+        width: 90%;
+    }
+    .paycard {
+        width: 40%;
+    }
+}
+/* Pad */
+@media (height <= 600px) {
+    .button-left input {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}

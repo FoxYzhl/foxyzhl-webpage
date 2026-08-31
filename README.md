@@ -1,1 +1,34 @@
-# foxyzhl-webpage
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>作品总站</title>
+        <link rel="stylesheet" href="./css/home.css" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <h1>foxyzhl的小屋🏠</h1>
+            <a href="https://github.com/FoxYzhl">Github主页</a>
+        </header>
+        <main>
+            <!-- 跳转卡片 -->
+            <div class="card" onclick="window.open('./html/pet.html')">
+                <img src="favicon.ico" width="100px" height="100px" alt="点击以查看该作品"/>
+                <div class="descript">
+                    <h3>电子宠物</h3>
+                    <p> <span>养成</span> <span>游戏</span><br>一只电子宠物 </p>
+                </div>
+            </div>
+
+            <div class="card" onclick="window.open('./html/cilicilivideo.html')">
+                <img src="favicon.ico" width="100px" height="100px" alt="点击以查看该作品"/>
+                <div class="descript">
+                    <h3>CiliCili</h3>
+                    <p> <span>仿站</span> <span>简单项目</span><br>视频详情页实现 </p>
+                </div>
+            </div>
+        </main>
+        <footer> <p>&copy; FoxYzhl及贡献者</p> </footer>
+    </body>
+</html>

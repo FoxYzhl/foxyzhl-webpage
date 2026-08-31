@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>作品总站</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            /* header */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 10vh;
+                padding: 15px 40px;
+                border-bottom: 1px solid #b3b3b3;
+                box-shadow: 0 0 50px 10px #a0a0a0;
+                background-color: white;
+                flex-wrap: wrap;
+            }
+            header a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.4rem;
+                border: 0;
+                transition: all 0.3s;
+            }
+            /* main */
+            main {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .card {
+                width: 27%;
+                margin-top: 4rem;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+                border-radius: 20px;
+                box-shadow: 0 0 50px 10px #d4d3d3;
+                border: 1px solid #c6c6c6;
+                cursor: pointer;
+            }
+            .descript {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+            .descript h3 {
+                border-bottom: 1px solid #676767;
+            }
+            .descript p {
+                padding: 10px 0 ;
+            }
+            .descript span {
+                background-color: #b3b3b3;
+                border-radius: 100px;
+                color: #676767;
+                font-size: 0.9rem;
+                padding: 5px;
+            }
+            /* footer */
+            footer p {
+                margin-top: 4rem;
+                text-align: center;
+                color: #898D98;
+            }
+            /* hover */
+            header a:hover {
+                border-bottom: 2px solid #000000;
+                transition: all 0.3s;
+            }
+            .card:hover {
+                border: 1px solid #0078D4;
+            }
+
+            /* phone */
+            @media (width <= 850px) {
+                header {
+                    height: 20vh;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+                header a {
+                    background-color: black;
+                    color: white;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+                .descript span {
+                    background-color: #00000000;
+                }
+                .card {
+                    flex-direction: column;
+                    width: 37%;
+                }
+            }
+            @media (width <= 320px) {
+                header {
+                    height: 20vh;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+                header h1 {
+                    display: none;
+                }
+                header a {
+                    background-color: black;
+                    color: white;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+                .card {
+                    flex-direction: column;
+                    width: 50%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>foxyzhl的小屋🏠</h1>
+            <a href="https://github.com/Robert53225">Github主页</a>
+        </header>
+        <main>
+            <!-- 跳转卡片 -->
+            <div class="card" onclick="window.open('./html/pet.html')">
+                <img src="favicon.ico" width="100px" height="100px" alt="点击以查看该作品"/>
+                <div class="descript">
+                    <h3>电子宠物</h3>
+                    <p> <span>养成</span> <span>游戏</span><br>一只电子宠物 </p>
+                </div>
+            </div>
+
+            <div class="card" onclick="window.open('./html/cilicilivideo.html')">
+                <img src="favicon.ico" width="100px" height="100px" alt="点击以查看该作品"/>
+                <div class="descript">
+                    <h3>CiliCili</h3>
+                    <p> <span>仿站</span> <span>简单项目</span><br>视频详情页实现 </p>
+                </div>
+            </div>
+        </main>
+        <footer> <p>&copy; FoxYzhl及贡献者</p> </footer>
+    </body>
+</html>

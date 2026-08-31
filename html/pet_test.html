@@ -1,0 +1,93 @@
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .payfood_background {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #00000067;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .payfood_window {
+        width: 45%;
+        height: 40vh;
+    }
+    .window_title {
+        background-color: #76ba51;
+        color: white;
+        text-align: center;
+        border-radius: 80px 80px 0 0;
+        height: 10%;
+    }
+    .window_main {
+        padding: 20px;
+        background-color: #d9d9a5;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-radius: 0 0 20px 20px;
+        height: 85%;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+    .paycard {
+        width: 25%;
+        height: 220px;
+        background-color: white;
+        border: 1px solid #b2b2b2;
+        border-radius: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .cardup {
+        height: 75%;
+        background-color: #d7d4d4;
+        border-radius: 30px;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carddown {
+        margin-top: 10px;
+        height: 25%;
+        border-top: 1px solid black;
+        color: #979797;
+    }
+    .carddown span {
+        color: red;
+        margin: 0 0.6rem 0 0;
+    }
+    .carddown span > del {
+        color: #979797;
+        margin: 0 0 0 0.3rem;
+    }
+</style>
+<div class="payfood_background">
+    <div class="payfood_window">
+        <div class="window_title" onclick="payfood(1)">并夕夕·食物区</div>
+        <div class="window_main">
+            <div class="paycard" onclick="payfoods()">
+                <div class="cardup"><span>🥫</span></div>
+                <div class="carddown"><span>￥6</span>番茄肉罐头</div>
+            </div>
+            <div class="paycard" onclick="payfoods()">
+                <div class="cardup"><span>🍌</span></div>
+                <div class="carddown"><span>￥6<del>￥8</del></span>香蕉</div>
+            </div>
+            <div class="paycard" onclick="payfoods()">
+                <div class="cardup"><span>🍛</span></div>
+                <div class="carddown"><span>￥6<del>￥29.9</del></span>番茄炖香蕉</div>
+            </div>
+            <div class="paycard" onclick="payfoods()">
+                <div class="cardup"><span>🥤</span></div>
+                <div class="carddown"><span>￥6<del>￥9.9</del></span>鱼子酱可乐</div>
+            </div>
+        </div>
+    </div>
+</div>

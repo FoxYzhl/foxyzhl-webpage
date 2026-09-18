@@ -103,7 +103,7 @@ function chat() {
     }
     else {
         let input_value = document.getElementById("chat_input").value;
-        if (input_value != " ") {
+        if (input_value != "") {
             if (input_value == "你是谁") {
                 idMessage.innerHTML = "我是一只小猫 ヾ(≧▽≦*)o";
             }

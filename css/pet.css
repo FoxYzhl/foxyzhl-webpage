@@ -67,6 +67,42 @@ main {
     backdrop-filter: blur(4px);
     box-shadow: inset -6px -3px 15px 5px #ffffff83;
 }
+
+.chats {
+    max-width: 450px;
+    min-width: 100px;
+    height: 5vh;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #525252;
+    box-shadow: 0 0 50px 10px #6b6b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 100px;
+    margin: 80px auto 0 auto;
+}
+#chat_input {
+    border: none;
+    height: 100%;
+    width: 60%;
+    background-color: #E3E5E7;
+    font-size: 2em;
+    text-indent: 1em;
+    border-radius: 100px 0 0 100px;
+}
+.chat_submit {
+    border: none;
+    height: 100%;
+    width: 40%;
+    font-size: 2em;
+    background-color: #237bd3;
+    color: white;
+    border-radius: 0 100px 100px 0;
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     flex-direction: column-reverse;

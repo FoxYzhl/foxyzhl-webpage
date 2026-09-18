@@ -102,12 +102,17 @@ function chat() {
         idMessage.innerHTML = "你开了？！";
     }
     else {
-        let bools = Math.floor(Math.random()*2);
-        if (bools == 0) {
-            idMessage.innerHTML = npcchat_no2[Math.floor(Math.random()*npcchat_no2.length)];
+        let input_value = document.getElementById("chat_input").value;
+        if (input_value != " ") {
+            if (input_value == "你是谁") {
+                idMessage.innerHTML = "我是一只小猫 ヾ(≧▽≦*)o";
+            }
+            else {
+                idMessage.innerHTML = input_value + "！ ヾ(≧▽≦*)o";
+            }
         }
-        else if (bools == 1) {
-            idMessage.innerHTML = npcchat_no1[Math.floor(Math.random()*npcchat_no1.length)];
+        else {
+            idMessage.innerHTML = "？";
         }
         love += 2;
         hg -= 1;

@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/pet.css" type="text/css"/>
     </head>
     <body>
+        <!-- window -->
         <div class="window">
             <div class="window-main">
                 <p>温馨提示</p>
@@ -39,10 +40,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Main Page -->
         <main>
             <div class="button-left">
                 <input type="button" value="投喂" onclick="towei()"/>
-                <input type="button" value="对话" onclick="chat()"/>
                 <input type="button" value="种菜" onclick="grow()"/>
                 <input type="button" value="购买食物" onclick="payfood()"/>
             </div>
@@ -52,6 +54,10 @@
                 </div>
             </div>
         </main>
+        <div class="chats">
+            <input type="text" id="chat_input"/>
+            <input type="button" value="对话" class="chat_submit" onclick="chat()"/>
+        </div>
         <footer>
             <section class="foot">
                 <div>食物饱和度<span id="hunger">?</span></div>

@@ -4,7 +4,7 @@
 }
 body {
     height: 90vh;
-    background: linear-gradient(-150deg,#2f24ff,#7dd6ed,#2ec8ac,#0d94ee) no-repeat;
+    background: linear-gradient(to right, #00b09b, #96c93d) no-repeat;
 }
 div {
     overflow-wrap: break-word;
@@ -29,12 +29,12 @@ main {
 .button-left > input {
     width: 70%;
     min-height: 80px;
-    background-color: #00000000;
+    background-color: #1325ac00;
     border: none;
     border-radius: 0 100px 100px 100px;
     padding: 0.5rem;
     font-size: 1.4rem;
-    color: #237f29;
+    color: #000000;
     backdrop-filter: blur(4px);
     box-shadow: inset -6px -3px 15px 5px #ffffff63;
     transition: width 0.6s;
@@ -43,7 +43,7 @@ main {
     width: 100%;
     cursor: pointer;
     transition: width 0.6s;
-    color: #00ff12;
+    color: #0967b4;
 }
 .protagonist {
     width: 60%;
@@ -63,6 +63,7 @@ main {
     min-height: 10%;
     padding: 20px;
     border-radius: 20px 20px 0 20px;
+    color: #77ff00;
     text-indent: 2rem;
     backdrop-filter: blur(4px);
     box-shadow: inset -6px -3px 15px 5px #ffffff83;
@@ -85,6 +86,7 @@ main {
 }
 #chat_input {
     border: none;
+    outline: none;
     height: 100%;
     width: 60%;
     background-color: #E3E5E7;

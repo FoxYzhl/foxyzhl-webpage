@@ -15,10 +15,12 @@ div {
     justify-content: space-between;
 }
 main {
+    max-height: 600px;
     margin: 20px 0 0 0;
     display: flex;
     height: 60vh;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 250px;
 }
 .button-left {
     display: flex;
@@ -47,7 +49,7 @@ main {
     color: #0967b4;
 }
 .protagonist {
-    width: 60%;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;

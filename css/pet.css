@@ -207,8 +207,8 @@ footer {
 }
 .payfood_window {
     margin-top: 20vh;
-    width: 45%;
-    height: 40vh;
+    max-width: 700px;
+    max-height: 400px;
 }
 .window_title {
     background-color: #76ba51;
@@ -235,14 +235,14 @@ footer {
     height: 220px;
     background-color: white;
     border: 1px solid #b2b2b2;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px;
     cursor: pointer;
 }
 .cardup {
     height: 75%;
     background-color: #d7d4d4;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 1.8rem;
     display: flex;
     justify-content: center;

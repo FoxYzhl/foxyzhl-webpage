@@ -129,7 +129,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 16vh;
-    background: linear-gradient(90deg, #E3772B,#CBCB41,#E3772B,#CBCB41) no-repeat;
+    background: linear-gradient(90deg, #e32b2b,#d7c92b,#50e32b,#414ccb) no-repeat;
 }
 .foot {
     display: flex;
@@ -148,8 +148,8 @@ footer {
 .foot > div {
     border-radius: 100px;
     padding: 15px;
-    box-shadow: 0 0 30px 5px black;
-    border: 1px solid #525252;
+    font-weight: 100;
+    color: yellow;
 }
 .foot span {
     border-radius: 100px;
@@ -157,6 +157,7 @@ footer {
     box-shadow: inset 0 0 20px 1px black;
     margin: 0 10px;
     border: 1px solid #525252;
+    color: white;
 }
 .foot > div:hover {
     cursor: default;
